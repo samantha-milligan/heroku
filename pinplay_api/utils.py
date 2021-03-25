@@ -77,10 +77,10 @@ def create_playlist( user_info, playlist_info, settings_flags=None ):
     song_list = [('Crew', 'Brent Faiyaz'), ('Si Una Vez', 'Selena')]
 
     # search for song uri using song info
-    song_uris_list = get_song_uris(song_list, user_info)
+    #song_uris_list = get_song_uris(song_list, user_info)
 
     # add all song uris to empty playlist
-    add_songs(song_uris_list, playlist_id, user_info, playlist_info)
+    #add_songs(song_uris_list, playlist_id, user_info, playlist_info)
 
     return playlist_id
 
