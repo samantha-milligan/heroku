@@ -63,7 +63,8 @@ def create_playlist( user_info, playlist_info, settings_flags=None ):
     response = requests.post(
         query,
         data=data,
-        headers=headers
+        headers=headers,
+        verify=False
     )
 
     response = response.json()
@@ -77,10 +78,10 @@ def create_playlist( user_info, playlist_info, settings_flags=None ):
     song_list = [('Crew', 'Brent Faiyaz'), ('Si Una Vez', 'Selena')]
 
     # search for song uri using song info
-    #song_uris_list = get_song_uris(song_list, user_info)
+    song_uris_list = get_song_uris(song_list, user_info)
 
     # add all song uris to empty playlist
-    #add_songs(song_uris_list, playlist_id, user_info, playlist_info)
+    add_songs(song_uris_list, playlist_id, user_info, playlist_info)
 
     return playlist_id
 
@@ -127,7 +128,8 @@ def get_song_uris(song_list, user_info):
         # completes request to Spotify API
         response = requests.get(
             query,
-            headers=headers
+            headers=headers,
+            verify=False
         )
 
         response = response.json()
@@ -160,5 +162,6 @@ def add_songs( song_uris_list, playlist_id, user_info, playlist_info ):
     response = requests.post(
         query,
         data=data,
-        headers=headers
+        headers=headers,
+        verify=False
     )
