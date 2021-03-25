@@ -23,6 +23,6 @@ class PlaylistView(APIView):
         user_info = [user_id, auth_token]
         playlist_info = [playlist_name, None, False]
 
-        create_playlist(user_info, playlist_info)
-
-        return Response(status=status.HTTP_200_OK)
+        output = create_playlist(user_info, playlist_info)
+        return Response(output, status=status.HTTP_200_OK)
+        #return Response(status=status.HTTP_200_OK)
