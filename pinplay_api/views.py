@@ -16,9 +16,6 @@ class PlaylistView(APIView):
 
         user_id = request.query_params.get('user_id')
 
-        if len(user_id) == 0:
-            return Response(status=status.HTTP_400_BAD_REQUEST)
-
         auth_token = request.query_params.get('auth_token')
 
         playlist_name = request.query_params.get('playlist_name')
