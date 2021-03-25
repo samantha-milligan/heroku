@@ -13,10 +13,8 @@ class PlaylistView(APIView):
         # our API call format:
             # http http://127.0.0.1:8000/pinplay_api/ user_id==username auth_token==token playlist_name==name
             # put in your own values (username, token, name), no quotes
-
+        '''
         user_id = request.query_params.get('user_id')
-        if len(user_id) == 0:
-            Response(status=status.HTTP_400_BAD_REQUEST)
 
         auth_token = request.query_params.get('auth_token')
 
@@ -30,3 +28,5 @@ class PlaylistView(APIView):
         
 
         return Response(output)
+    '''
+        return Response(status=status.HTTP_400_BAD_REQUEST)
