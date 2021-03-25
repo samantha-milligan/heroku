@@ -69,8 +69,7 @@ def create_playlist( user_info, playlist_info, settings_flags=None ):
     response = response.json()
 
     # get playlist_id from Spotify API call
-    return response
-    #playlist_id = response['id']
+    playlist_id = response['id']
 
     # get song list from shazam
         # code: song_list = find_songs( settings_flags )
@@ -83,7 +82,7 @@ def create_playlist( user_info, playlist_info, settings_flags=None ):
     # add all song uris to empty playlist
     #add_songs(song_uris_list, playlist_id, user_info, playlist_info)
 
-    #return playlist_id
+    return playlist_id
 
 #def find_songs( location ):
 #    pass
