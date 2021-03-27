@@ -15,7 +15,6 @@ class PlaylistView(APIView):
             # put in your own values (username, token, name), no quotes
 
         user_id = request.query_params.get('user_id')
-
         auth_token = request.query_params.get('auth_token')
 
         playlist_name = request.query_params.get('playlist_name')
@@ -25,4 +24,7 @@ class PlaylistView(APIView):
 
         output = create_playlist(user_info, playlist_info)
 
-        return Response(output)
+        response = Response(output)
+        response['Access-Control-Allow-Origin'] = '*'
+
+        return response
