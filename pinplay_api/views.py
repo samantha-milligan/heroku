@@ -4,7 +4,7 @@ from rest_framework.views import APIView
 
 from pinplay_api.utils.account import Account
 from pinplay_api.utils.playlist import Playlist
-from pinplay_api.song import Song
+from pinplay_api.utils.song import Song
 
 
 class PlaylistView(APIView):
