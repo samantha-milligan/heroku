@@ -1,4 +1,7 @@
 # useful resources:
+    # Tutorial: https://www.youtube.com/watch?v=UxTwFMZ4r5k
+    
+    # Documentation and tips
     # 1. https://docs.djangoproject.com/en/3.1/topics/db/examples/many_to_many/
     # 2. https://docs.djangoproject.com/en/3.1/ref/models/fields/
     # 3. https://docs.djangoproject.com/en/3.1/ref/models/options/
