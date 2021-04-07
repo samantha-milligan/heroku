@@ -23,7 +23,7 @@ class track( models.Model ):
         # to retireve genre, song_uri, and explicitness, must make call to Spotify API
 
     def get_data( self ):
-        return ( self.title, self.artist, self.city, self.explicit ) 
+        return ( self.title, self.artist, self.city, self.genre, self.explicit ) 
 
 
 
