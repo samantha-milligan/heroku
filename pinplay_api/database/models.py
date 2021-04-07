@@ -9,32 +9,15 @@
  
 
 from django.db import models
-from django.db.models.fields.related import ForeignKey
 
-
-class Playlist( models.Model ):
-    playlist_name = models.CharField( max_length=20 )
-    
-
-    def get_data( self ):
-        return self.playlist_name
-
-    
-    
-
-class tracklist( models.Model ):
-    name = models.CharField( max_length = 50 )
-
-    
-    
 
 class track( models.Model ):
     title     = models.CharField( max_length = 50 )
     artist    = models.CharField( max_length = 50 )
     city      = models.CharField( max_length = 50 )
+    genre     = models.CharField( max_length = 50 )
     explicit  = models.BooleanField()
-    home_list = models.ForeignKey( tracklist, on_delete=models.CASCADE )
-    # genre = models.CharField( max_length = 50 )
+    
         
     # NOTE: 
         # to retireve genre, song_uri, and explicitness, must make call to Spotify API
