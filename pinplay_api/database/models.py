@@ -34,7 +34,10 @@ class track( models.Model ):
     city      = models.CharField( max_length = 50 )
     explicit  = models.BooleanField()
     home_list = models.ForeignKey( tracklist, on_delete=models.CASCADE )
-
+    # genre = models.CharField( max_length = 50 )
+        
+    # NOTE: 
+        # to retireve genre, song_uri, and explicitness, must make call to Spotify API
 
     def get_data( self ):
         return ( self.title, self.artist, self.city, self.explicit ) 
