@@ -2,9 +2,9 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from pinplay_api.utils.account import Account
-from pinplay_api.utils.playlist import Playlist
-from pinplay_api.utils.song import Song
+from .utils.account import Account
+from .utils.playlist import Playlist
+from .utils.song import Song
 
 
 class PlaylistView(APIView):

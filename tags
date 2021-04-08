@@ -1,0 +1,92 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/j/docs/spring21/Software_Engineering/heroku/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210131.0/
+ALLOWED_HOSTS	pinplay/settings.py	/^ALLOWED_HOSTS = ['radiant-anchorage-77650.herokuapp.com']$/;"	v
+AUTH_PASSWORD_VALIDATORS	pinplay/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	v
+Account	pinplay_api/utils/account.py	/^class Account:$/;"	c
+BASE_DIR	pinplay/settings.py	/^BASE_DIR = Path(__file__).resolve().parent.parent$/;"	v
+DATABASES	pinplay/settings.py	/^DATABASES = {$/;"	v
+DEBUG	pinplay/settings.py	/^DEBUG = False$/;"	v
+INSTALLED_APPS	pinplay/settings.py	/^INSTALLED_APPS = [$/;"	v
+LANGUAGE_CODE	pinplay/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+MIDDLEWARE	pinplay/settings.py	/^MIDDLEWARE = [$/;"	v
+Meta	pinplay_api/models.py	/^class Meta:$/;"	c
+Migration	pinplay_api/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	pinplay_api/migrations/0002_auto_20210305_1850.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	pinplay_api/migrations/0003_auto_20210305_1856.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	pinplay_api/migrations/0004_delete_playlist.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	pinplay_api/migrations/0005_location_track.py	/^class Migration(migrations.Migration):$/;"	c
+PinplayApiConfig	pinplay_api/apps.py	/^class PinplayApiConfig(AppConfig):$/;"	c
+Playlist	pinplay_api/utils/playlist.py	/^class Playlist:$/;"	c
+PlaylistView	pinplay_api/views.py	/^class PlaylistView(APIView):$/;"	c
+ROOT_URLCONF	pinplay/settings.py	/^ROOT_URLCONF = 'pinplay.urls'$/;"	v
+SECRET_KEY	pinplay/settings.py	/^    SECRET_KEY = f.read().strip()$/;"	v
+STATIC_ROOT	pinplay/settings.py	/^STATIC_ROOT = BASE_DIR \/ 'staticfiles'  #. os.path.join(BASE_DIR, 'staticfiles')$/;"	v
+STATIC_URL	pinplay/settings.py	/^STATIC_URL = '\/static\/'$/;"	v
+Song	pinplay_api/utils/song.py	/^class Song:$/;"	c
+TEMPLATES	pinplay/settings.py	/^TEMPLATES = [$/;"	v
+TIME_ZONE	pinplay/settings.py	/^TIME_ZONE = 'UTC'$/;"	v
+USE_I18N	pinplay/settings.py	/^USE_I18N = True$/;"	v
+USE_L10N	pinplay/settings.py	/^USE_L10N = True$/;"	v
+USE_TZ	pinplay/settings.py	/^USE_TZ = True$/;"	v
+WSGI_APPLICATION	pinplay/settings.py	/^WSGI_APPLICATION = 'pinplay.wsgi.application'$/;"	v
+__init__	pinplay_api/utils/account.py	/^	def __init__(self, user_id, spotify_token):$/;"	m	class:Account
+__init__	pinplay_api/utils/playlist.py	/^	def __init__(self, name):$/;"	m	class:Playlist
+__init__	pinplay_api/utils/song.py	/^    def __init__(self, playlist):$/;"	m	class:Song
+__str__	pinplay_api/models.py	/^    def __str__( self ):$/;"	m	class:track
+add_songs	pinplay_api/utils/song.py	/^    def add_songs(self, song_uris_list, spotify_token):$/;"	m	class:Song
+app_label	pinplay_api/models.py	/^    app_label = "pinplay_api"$/;"	v	class:Meta
+application	pinplay/asgi.py	/^application = get_asgi_application()$/;"	v
+application	pinplay/wsgi.py	/^application = get_wsgi_application()$/;"	v
+artist	pinplay_api/models.py	/^    artist    = models.CharField( max_length = 50 )$/;"	v	class:track
+city	pinplay_api/models.py	/^    city      = models.CharField( max_length = 50 )$/;"	v	class:track
+city	pinplay_api/models.py	/^    city  = models.CharField( max_length = 40 )$/;"	v	class:location
+create_playlist	pinplay_api/utils/playlist.py	/^	def create_playlist(self, user_id, spotify_token):$/;"	m	class:Playlist
+db_from_env	pinplay/settings.py	/^db_from_env = dj_database_url.config(conn_max_age=500)$/;"	v
+dependencies	pinplay_api/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	pinplay_api/migrations/0002_auto_20210305_1850.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	pinplay_api/migrations/0003_auto_20210305_1856.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	pinplay_api/migrations/0004_delete_playlist.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	pinplay_api/migrations/0005_location_track.py	/^    dependencies = [$/;"	v	class:Migration
+explicit	pinplay_api/models.py	/^    explicit  = models.BooleanField()$/;"	v	class:track
+find_songs	pinplay_api/utils/song.py	/^    def find_songs(self):$/;"	m	class:Song
+genre	pinplay_api/models.py	/^    genre     = models.CharField( max_length = 50 )$/;"	v	class:track
+get	pinplay_api/views.py	/^    def get(self, request):$/;"	m	class:PlaylistView
+get_data	pinplay_api/models.py	/^    def get_data( self ):$/;"	m	class:location
+get_data	pinplay_api/models.py	/^    def get_data( self ):$/;"	m	class:track
+get_id	pinplay_api/utils/playlist.py	/^	def get_id(self):$/;"	m	class:Playlist
+get_location	pinplay_api/utils/account.py	/^	def get_location(self):$/;"	m	class:Account
+get_settings	pinplay_api/utils/playlist.py	/^	def get_settings(self):$/;"	m	class:Playlist
+get_song_uris	pinplay_api/utils/song.py	/^    def get_song_uris(self, song_list, spotify_token):$/;"	m	class:Song
+get_spotify_token	pinplay_api/utils/account.py	/^	def get_spotify_token(self):$/;"	m	class:Account
+get_user_id	pinplay_api/utils/account.py	/^	def get_user_id(self):$/;"	m	class:Account
+get_user_type	pinplay_api/utils/account.py	/^	def get_user_type(self):$/;"	m	class:Account
+heroku	README.md	/^# heroku/;"	c
+initial	pinplay_api/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+initial	pinplay_api/migrations/0005_location_track.py	/^    initial = True$/;"	v	class:Migration
+location	pinplay_api/models.py	/^class location( models.Model ):$/;"	c
+main	manage.py	/^def main():$/;"	f
+name	pinplay_api/apps.py	/^    name = 'pinplay_api'$/;"	v	class:PinplayApiConfig
+open_CSV	pinplay_api/utils/csv_utils.py	/^def open_CSV( file_path ):$/;"	f
+operations	pinplay_api/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+operations	pinplay_api/migrations/0002_auto_20210305_1850.py	/^    operations = [$/;"	v	class:Migration
+operations	pinplay_api/migrations/0003_auto_20210305_1856.py	/^    operations = [$/;"	v	class:Migration
+operations	pinplay_api/migrations/0004_delete_playlist.py	/^    operations = [$/;"	v	class:Migration
+operations	pinplay_api/migrations/0005_location_track.py	/^    operations = [$/;"	v	class:Migration
+parse_CSV	pinplay_api/utils/csv_utils.py	/^def parse_CSV( open_csv_file ):$/;"	f
+print_arr	pinplay_api/utils/csv_utils.py	/^def print_arr( arrToPrint ):$/;"	f
+title	pinplay_api/models.py	/^    title     = models.CharField( max_length = 50 )$/;"	v	class:track
+track	pinplay_api/models.py	/^    track = models.ManyToManyField( track )$/;"	v	class:location
+track	pinplay_api/models.py	/^class track( models.Model ):$/;"	c
+urlpatterns	pinplay/urls.py	/^urlpatterns = [$/;"	v
+urlpatterns	pinplay_api/urls.py	/^urlpatterns = [$/;"	v
+validate_spotify_info	pinplay_api/utils/account.py	/^	def validate_spotify_info(self):$/;"	m	class:Account
+validate_user	pinplay_api/utils/account.py	/^	def validate_user(self):$/;"	m	class:Account
