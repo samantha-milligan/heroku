@@ -86,10 +86,10 @@ class Song:
         filtered_uris = []
 
         for song_info in song_info_list:
-            if explicit:
+            if song_info[1] == False:
                 filtered_uris.append(song_info[0])
             else:
-                if song_info[1] == False:
+                if explicit == True:
                     filtered_uris.append(song_info[0])
 
         return filtered_uris
