@@ -5,32 +5,35 @@ from rest_framework.views import APIView
 from pinplay_api.utils.account import Account
 from pinplay_api.utils.playlist import Playlist
 from pinplay_api.utils.song import Song
+from pinplay_api.load_database import add
 
 
 class PlaylistView(APIView):
 
     def get(self, request):
-        # Creates playlist and adds songs using user and playlist info
+        # creates playlist using user info and playlist info
 
-        # get user id and spotify token from request
         user_id = request.query_params.get('user_id')
-        spotify_token = request.query_params.get('auth_token')
+        spotify_token = request.query_params.get('spotify_token')
         account = Account(user_id, spotify_token)
 
-        # get playlist name from request
         playlist_name = request.query_params.get('playlist_name')
         playlist = Playlist(playlist_name)
 
-        # create empty playlist
         playlist.create_playlist(user_id, spotify_token)
 
         song = Song(playlist)
-        song_list = song.find_songs()
-        song_uris_list = song.get_song_uris(song_list, spotify_token)
-        # add songs to playlist
-        song.add_songs(song_uris_list, spotify_token)
+        location = request.query_params.get('location')
+        song_list = song.find_songs(location)
+        song_info_list = song.get_song_info(song_list, spotify_token)
 
-        # return playlist id to embed into website
+        explicit = request.query_params.get('explicit')
+        genre = request.query_params.get('genre')
+        filtered_uris = song.filter_songs(song_info_list, spotify_token, explicit, genre)
+        song.add_songs(filtered_uris, spotify_token)
+
+        add(spotify_token, location)
+
         response = Response(playlist.get_id())
         response['Access-Control-Allow-Origin'] = '*'
 
