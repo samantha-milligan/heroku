@@ -89,7 +89,7 @@ class Song:
             if explicit:
                 filtered_uris.append(song_info[0])
             else:
-                if explicit == song_info[1]:
+                if song_info[1] == False:
                     filtered_uris.append(song_info[0])
 
         return filtered_uris
