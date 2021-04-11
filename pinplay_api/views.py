@@ -32,7 +32,7 @@ class PlaylistView(APIView):
         filtered_uris = song.filter_songs(song_info_list, spotify_token, explicit, genre)
         song.add_songs(filtered_uris, spotify_token)
 
-        add(spotify_token, location)
+        #add(spotify_token, location)
 
         response = Response(playlist.get_id())
         response['Access-Control-Allow-Origin'] = '*'
