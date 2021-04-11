@@ -85,11 +85,10 @@ class Song:
         # need to add genre
         filtered_uris = []
 
-        if explicit == True:
-            for song_info in song_info_list:
+        for song_info in song_info_list:
+            if explicit == 'True':
                 filtered_uris.append(song_info[0])
-        else:
-            for song_info in song_info_list:
+            else:
                 if song_info[1] == False:
                     filtered_uris.append(song_info[0])
 
